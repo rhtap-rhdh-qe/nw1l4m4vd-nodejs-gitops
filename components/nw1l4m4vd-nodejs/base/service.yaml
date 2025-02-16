@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: nw1l4m4vd-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nw1l4m4vd-nodejs 
+  name: nw1l4m4vd-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: nw1l4m4vd-nodejs 
